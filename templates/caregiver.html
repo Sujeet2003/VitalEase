@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<section class="caregiver-section">
+    <h2>Caregiver</h2>
+    <div class="caregiver">
+        <div class="caregiver-details">
+            <h1>Caregiver Details</h1>
+            <div>
+                <div>
+                    <label class="care-giver-inputs" for="name">Name</label>
+                    <input class="care-giver-inputs" autocomplete="off" type="text" name="name" id="names">
+                </div>
+                <div>
+                    <label class="care-giver-inputs" for="age">Age</label>
+                    <input class="care-giver-inputs" autocomplete="off" type="number" name="age" id="age">
+                </div>
+                <div>
+                    <label class="care-giver-inputs" for="phone-number">Contact Number</label>
+                    <input class="care-giver-inputs" autocomplete="off" type="number" name="phone-number" id="phone-number">
+                </div>
+                <div>
+                    <label class="care-giver-inputs" for="address">Address</label>
+                    <input class="care-giver-inputs" autocomplete="off" type="text" name="address" id="address">
+                </div>
+                <div>
+                    <label class="care-giver-inputs" for="id">ID Proof</label>
+                    <input class="care-giver-inputs" autocomplete="off" type="text" name="id" id="id">
+                </div>
+            </div>
+        </div>
+        <div class="care-giver-services">
+            <div class="languages">
+                <h1>Languages</h1>
+                <ul>
+                    <li>Hindi</li>
+                    <li>English</li>
+                    <li>Kannada</li>
+                    <li>Marathi</li>
+                    <li>Bengali</li>
+                </ul>
+            </div>
+            <div class="services">
+                <img src="{% static 'Images/support.png' %}" alt="">
+                <img src="{% static 'Images/email.png' %}" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock content %}

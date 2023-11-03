@@ -1,0 +1,93 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<section>
+    <h2>Medications</h2>
+    <div class="medication-content">
+        <div>
+            <div class="medication-disease">
+                <h2>Mention your disease</h2>
+                <div>
+                    <input type="text" name="disease" id="disease" value="Common Cold">
+                    <span>+</span>
+                </div>
+            </div>
+            <div class="medication-details">
+                <h2>Medications Details</h2>
+                <div class="box">
+                    <table>
+                        <tr>
+                            <th>Drug Name</th>
+                            <th>Drug Type</th>
+                            <th>Drug Dosage</th>
+                            <th>Quantity</th>
+                            <th>Time</th>
+                        </tr>
+                        <tr>
+                            <td>Paracetamol</td>
+                            <td>Tablet</td>
+                            <td>350mg</td>
+                            <td>1</td>
+                            <td>10:30 - 11:30</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="box">
+                    <table>
+                        <tr>
+                            <th>Drug Name</th>
+                            <th>Drug Type</th>
+                            <th>Drug Dosage</th>
+                            <th>Quantity</th>
+                            <th>Time</th>
+                        </tr>
+                        <tr>
+                            <td>Coldact</td>
+                            <td>Tablet</td>
+                            <td>250mg</td>
+                            <td>1</td>
+                            <td>10:30 - 11:30</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="box">
+                    <table>
+                        <tr>
+                            <th>Drug Name</th>
+                            <th>Drug Type</th>
+                            <th>Drug Dosage</th>
+                            <th>Quantity</th>
+                            <th>Time</th>
+                        </tr>
+                        <tr>
+                            <td>Ibupropen</td>
+                            <td>Tablet</td>
+                            <td>400mg</td>
+                            <td>1</td>
+                            <td>10:30 - 11:30</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="img-box">
+            <div>
+                <div class="img-1">
+                    <img src="{% static 'Images/medication-4.jpg' %}" alt="not">
+                </div>
+                <div class="img-2">
+                    <img src="{% static 'Images/medication-2.jpg' %}" alt="not">
+                </div>
+            </div>
+            <div>
+                <div class="img-3">
+                <img src="{% static 'Images/medication-3.jpg' %}" alt="not">
+            </div>
+            <div class="img-4">
+                <img src="{% static 'Images/medication-1.png' %}" alt="">
+            </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock content %}

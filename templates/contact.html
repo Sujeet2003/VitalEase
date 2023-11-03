@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<section>
+    <div class="contact">
+        <div class="close-contact">
+            <h3>Close Contact</h3>
+            <div>
+                <div>
+                    <label class="close-contact-inputs" for="relationship">Relationship</label>
+                    <select class="close-contact-inputs" name="relationship" id="relationship">
+                        <option value="son">Son</option>
+                        <option value="daughter">Daughter</option>
+                        <option value="grandson">Grand Son</option>
+                        <option value="granddaughter">Grand Daughter</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="close-contact-inputs" for="name">Name</label>
+                    <input class="close-contact-inputs" type="text" name="name" value="XYZ..." id="name">
+                </div>
+                <div>
+                    <label class="close-contact-inputs" for="phone">Contact Number</label>
+                    <input class="close-contact-inputs" type="text" name="phone" id="phone" value="(+91) 12345 09876">
+                </div>
+            </div>
+        </div>
+        <div class="emergency">
+            <h3>Emergency Contact</h3>
+            <div>
+                <div>
+                    <h4>Doctor</h4>
+                    <ul>
+                        <li>(+91) 12345 12345</li>
+                        <li>(+91) 99999 00000</li>
+                        <li>(+46) 567 765 0000</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Private Ambulance</h4>
+                    <ul>
+                        <li>(+91) 12345 12345</li>
+                        <li>(+91) 99999 00000</li>
+                        <li>(+46) 567 765 0000</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="emergency-sos">
+        <h1>Emergency SOS: <span>108</span></h1>
+        <img src="{% static 'Images/telephone.png' %}" alt="">
+    </div>
+</section>
+{% endblock content %}
