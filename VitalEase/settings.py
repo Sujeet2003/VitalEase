@@ -117,7 +117,7 @@ USE_TZ = True
 import os
 STATIC_URL = '/static/'
 STSTICFILES_DIRS = [
-    BASE_DIR / 'static'
+    BASE_DIR / 'static/CSS'
 ]
 STATIC_ROOT = BASE_DIR / 'staticfiles'
 
