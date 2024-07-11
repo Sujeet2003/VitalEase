@@ -26,6 +26,5 @@
             "src": "/(.*)",
             "dest": "VitalEase/wsgi.py"
         }
-    ],
-    "build": "python -m pip install -r requirements.txt && python manage.py collectstatic --no-input"
+    ]
 }
